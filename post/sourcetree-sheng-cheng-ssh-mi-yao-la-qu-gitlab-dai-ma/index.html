@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>SourceTree生成SSH密钥(拉取GitLab代码) | 暮雨今汐</title>
+<meta name="description" content="说什么王权富贵 / 怕什么戒律清规">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhoujingpiao.github.io/favicon.ico?v=1562408698249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhoujingpiao.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhoujingpiao.github.io">
+        <img src="https://zhoujingpiao.github.io/images/avatar.png?v=1562408698249" class="site-logo">
+        <h1 class="site-title">暮雨今汐</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhoujingpiao" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://weibo.com/2407408715" target="_blank">
+            <i class="fab fa-weibo"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      说什么王权富贵 / 怕什么戒律清规
+    </div>
+    <div class="site-footer">
+      Powered by Gridea | <a class="rss" href="https://zhoujingpiao.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">SourceTree生成SSH密钥(拉取GitLab代码)</h2>
+            <div class="post-date">2017-12-27</div>
+            
+              <div class="feature-container" style="background-image: url('https://zhoujingpiao.github.io/post-images/sourcetree-sheng-cheng-ssh-mi-yao-la-qu-gitlab-dai-ma.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <p>SourceTree是一款第三方可视化的Git客户端。</p>
+<p>安全,好用,免密码,逼格高。</p>
+<!-- more -->
+<h3 id="1为什么">1.为什么</h3>
+<p>安全,好用,免密码,逼格高</p>
+<h3 id="2流程">2.流程</h3>
+<ul>
+<li>
+<p>1.安装Git客户端,安装SourceTree客户端,我的版本分别为:Git:2.9.3,SourceTree2.3.5,注意安装最好不要带有中文路径</p>
+</li>
+<li>
+<p>2.SourceTree客户端,点击菜单栏工具-创建或导入SSH密钥
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk0NTU3NjE2" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>3.点击Generate生成ssh密钥,需要耐心等待,据说点击进度条下方空白页面会快一点,可试试
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk0NjQwODY1" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>4.生成之后如图,红框内为公钥,这时候建议先把公钥和私钥都保存到本地路径做好备份,避免手抖关了窗口
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk0NzEzOTg3" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>5.登录GitLab,把公钥复制到GitLab里面,具体路径如图,然后把上一步窗口中的公钥复制进去,点击增加密钥按钮,便生成ssh密钥
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk0NzQxNjAw" alt="这里写图片描述"></p>
+</li>
+</ul>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk0ODI3Nzg3" alt="这里写图片描述"></p>
+<ul>
+<li>
+<p>6.找到想要拉取的项目主页,找到项目的ssh密钥链接,点击右边复制按钮
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk1MjI2OTE0" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>7.回到SourceTree主页,检查一下密钥配置,点击菜单栏工具-选项,地址指向刚才保存的私钥路径
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk1NTQxMDE5" alt="这里写图片描述"></p>
+<p>如果后续有问题,可以回来禁用一下这个验证
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk1NjE5Mzgy" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>8.配置没问题了继续,点击菜单栏文件-第一个克隆/新建选项,打开一个新的Clone页面,把刚才GitLab上的ssh密钥链接复制进来,这里目标路径也要指向非空目录,ssh链接没复制错的话这里会识别出Git仓库
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MDk1OTQyMzAy" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>9.点击克隆,没问题就可以了,但有可能会出现如图报错,提示这个的话,直接看右下角这个奇怪的图标,这里需要从这个addKey入口重新导入一下私钥,如果刚才设置了密码就输入密码,导入之后close,这个图标还是在右下角系统托盘运行的
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MTAwMDI4MzM4" alt="这里写图片描述"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MTAwMDM5NTkw" alt="这里写图片描述"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MTAwMDU0MTM0" alt="这里写图片描述"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MTAwMTA3OTY3" alt="这里写图片描述"></p>
+</li>
+<li>
+<p>10.然后就可以啦.....
+<img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMjI3MTAwMzI4MjM1" alt="这里写图片描述"></p>
+</li>
+</ul>
+<p>谢谢。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhoujingpiao.github.io/post/android-kai-fa-zhi-dui-xian-cheng-chi-de-li-jie">
+                  <h3 class="post-title">
+                    Android开发之对线程池的理解
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd5a826af873be485f97c',
+        clientSecret: 'f745c9fa3c0f3529b094fb06fd020ca37a919755',
+        repo: 'zhoujingpiao.github.io',
+        owner: 'zhoujingpiao',
+        admin: ['zhoujingpiao'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
