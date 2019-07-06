@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhoujingpiao.github.io</id>
-    <title>暮雨今夕</title>
-    <updated>2019-07-06T09:32:30.199Z</updated>
+    <title>暮雨今汐</title>
+    <updated>2019-07-06T09:33:22.729Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhoujingpiao.github.io"/>
     <link rel="self" href="https://zhoujingpiao.github.io/atom.xml"/>
     <subtitle>说什么王权富贵 / 怕什么戒律清规</subtitle>
     <logo>https://zhoujingpiao.github.io/images/avatar.png</logo>
     <icon>https://zhoujingpiao.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, 暮雨今夕</rights>
+    <rights>All rights reserved 2019, 暮雨今汐</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zhoujingpiao.github.io/post/hello-gridea</id>
