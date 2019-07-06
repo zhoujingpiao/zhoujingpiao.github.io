@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhoujingpiao.github.io</id>
     <title>暮雨今汐</title>
-    <updated>2019-07-06T09:37:32.865Z</updated>
+    <updated>2019-07-06T09:51:52.905Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhoujingpiao.github.io"/>
     <link rel="self" href="https://zhoujingpiao.github.io/atom.xml"/>
@@ -11,35 +11,71 @@
     <icon>https://zhoujingpiao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 暮雨今汐</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <title type="html"><![CDATA[Java开发环境配置]]></title>
         <id>https://zhoujingpiao.github.io/post/hello-gridea</id>
         <link href="https://zhoujingpiao.github.io/post/hello-gridea">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2015-08-12T14:52:54.000Z</updated>
+        <summary type="html"><![CDATA[<ul>
+<li>7月29号下载完整版镜像更新了win10的64位专业版，原本已经空着一个盘准备装双系统，无奈安装过程中忽视了路径选择，直接覆盖了原来的系统。</li>
+</ul>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<ul>
+<li>7月29号下载完整版镜像更新了win10的64位专业版，原本已经空着一个盘准备装双系统，无奈安装过程中忽视了路径选择，直接覆盖了原来的系统。</li>
+</ul>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<ul>
+<li>
+<p>像小孩子收到新玩具一样，一开始很惊喜，虽然安装使用过程中没有错误，没能遇到微软的诗句。上手的体验感还是特别好的，但用多了，暂时感觉win10最突出的几个点，目前的完善程度和使用场景都不是很理想，就如微软小娜和多任务桌面这两个功能，第一次用感觉高大上，但是小娜不知道是我设置问题还是目前的优化，对于语音音量和搜索点的结果都还是不习惯于我，而且感觉对于win7的成熟度来说，虽然系统兼容性已经不错，win10目前还是不适合用来做开发，我觉得一个好的开发环境，稳定性和安全性是要大于新鲜感的。作为深度强迫症患者，仅仅是桌面的任务栏没有win7的透明感就让我十分压抑，刚好今天遇到adt出毛病，genymotion也貌似暂时不支持？因此果断重装win7，别问我为什么不滚回去，因为前几天手贱......有强迫症的小孩子，有了新玩具是不会想着让旧玩具占据太大的空间的。</p>
+</li>
+<li>
+<p>趁着安装系统的劲，再次感受一年多以前安装开发环境的过程，只是回不到当初的欣喜感了，抒情至此，上干货（基于win7平台）。</p>
+</li>
+<li>
+<p>因为Android开发也是基于Java语言的，所以这也是安装Android开发环境的前提，先安装Java开发环境:</p>
+</li>
+</ul>
+<h3 id="1-下载jdk-java-development-kit">1. 下载JDK （Java Development Kit）</h3>
+<pre><code>    下载地址：http://www.oracle.com/index.html    /   Downloads  /  Java For Develop  /  
+    自选版本，推荐1.6及其以上，尽量不要下载太旧的，支持的特性太少。
+</code></pre>
+<h3 id="2安装jdk以及里面自带的jre">2.安装JDK，以及里面自带的jre</h3>
+<p>注意：</p>
+<ul>
+<li>
+<p>2.1  两者不能安装在同一个文件夹下；</p>
+</li>
+<li>
+<p>2.2  安装路径不能有中文或者空格，最好只有英文和数字下划线；</p>
+</li>
+<li>
+<p>2.3  安装版本应根据系统的32位或者64位来安装，android下载的sdk版本也是如此；</p>
+</li>
+<li>
+<p>2.4 安装图示略过，注意不要放在系统盘下就好；</p>
+</li>
+</ul>
+<h3 id="3-配置path环境变量">3.  配置path环境变量</h3>
+<p>依次点开电脑 - 属性 - 高级系统设置（高级）  - 环境变量</p>
+<ul>
+<li>
+<p>3.1 创建一个JAVA_HOME的变量(指代JDK安装路径)：E:\jdk1.7.0_45</p>
+</li>
+<li>
+<p>3.2  在path路径前添加：%JAVA_HOME%/bin;</p>
+</li>
+</ul>
+<p>此处注意：</p>
+<p>1） Path环境意义：要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下面寻找此程序外，还应到path中指定的路径 去找。用户通过设置环境变量，来更好的运行进程；</p>
+<p>2）一般习惯上放前面，英文标点不要写错，最好直接复制过去；</p>
+<p>3）以后需要更换JDK的目录时，只需要更换JAVA_HOME的目录即可，这是前面配置JAVA_HOME意义，Path环境变量改动会对系统有影响，所以建议提前备份一个txt文档保存环境变量值；</p>
+<ul>
+<li>3.3  配置CLASSPATH变量：.;%JAVA_HOME%\lib\tools.jar</li>
+</ul>
+<p>此处表示用于编译时JAVA类的路径，注意这里设置的是两个值，(.;)表示的是JVM先搜索当前目录。                  其值为：.;%JAVA_HOME%\lib\tools.jar。</p>
+<h3 id="4-验证环境配置是否正确输入内容不区分大小写">4. 验证环境配置是否正确（输入内容不区分大小写）</h3>
+<p>依次点击开始 - 运行 （或者按快捷键windows + R）,输入cmd 打开命令行工具，依次输入java -version、javac，如果有返回内容且不是报错误信息，报错的话请重新对照安装流程对一遍，尤其是安装说明，安装出错一般需要重装，且要先卸载再重启一遍系统再重新安装。如果没报错，返回类似信息，就表示配置成功，结果如下：</p>
+<p>以上，则表示配置完成。</p>
 ]]></content>
     </entry>
 </feed>
