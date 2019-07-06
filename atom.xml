@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhoujingpiao.github.io</id>
     <title>暮雨今汐</title>
-    <updated>2019-07-06T10:17:48.520Z</updated>
+    <updated>2019-07-06T10:18:22.405Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhoujingpiao.github.io"/>
     <link rel="self" href="https://zhoujingpiao.github.io/atom.xml"/>
@@ -16,9 +16,14 @@
         <link href="https://zhoujingpiao.github.io/post/android-kai-fa-zhi-dui-xian-cheng-chi-de-li-jie">
         </link>
         <updated>2016-09-22T16:00:02.000Z</updated>
+        <summary type="html"><![CDATA[<ul>
+<li>今天撸代码时遇到这个点，于是回头看了一遍，重新梳理了一下Android线程池的使用，为了加深理解，顺便做了一个小Demo，谈技术要联系实际需求，而且不提源码的都是耍流氓，下面从Why、What、How三个大方面谈谈我对android线程池的部分理解，水平有限，错误之处还请指出。</li>
+</ul>
+]]></summary>
         <content type="html"><![CDATA[<ul>
 <li>今天撸代码时遇到这个点，于是回头看了一遍，重新梳理了一下Android线程池的使用，为了加深理解，顺便做了一个小Demo，谈技术要联系实际需求，而且不提源码的都是耍流氓，下面从Why、What、How三个大方面谈谈我对android线程池的部分理解，水平有限，错误之处还请指出。</li>
 </ul>
+<!-- more -->
 <h3 id="why-为什么要用android线程池">Why | 为什么要用Android线程池</h3>
 <ul>
 <li>首先要从实际需求中说起：再我们在移动端（主要指手机）中执行多项任务时，因为考虑到手机cpu和内存性能有限（Android来说，就算你是821+8G+128G的小米5S写一个循环new线程小程序去运行内存也是分分钟消耗完，主要的日常程序加手机rom也接近3G了吧），这时也不能去停止线程，尤其在线程中执行一些例如联网、下载、读取数据等耗时操作时，多条线程同时运行会降低程序运行效率，造成卡顿的效果，严重影响了用户体验，因此我们在开发中需要用线程池去管理这些线程。</li>
