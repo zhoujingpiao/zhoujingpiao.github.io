@@ -1,22 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zhoujingpiao.github.io</id>
-    <title>暮雨今汐</title>
-    <updated>2019-07-06T10:14:20.477Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zhoujingpiao.github.io"/>
-    <link rel="self" href="https://zhoujingpiao.github.io/atom.xml"/>
-    <subtitle>说什么王权富贵 / 怕什么戒律清规</subtitle>
-    <logo>https://zhoujingpiao.github.io/images/avatar.png</logo>
-    <icon>https://zhoujingpiao.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, 暮雨今汐</rights>
-    <entry>
-        <title type="html"><![CDATA[Android开发之对线程池的理解]]></title>
-        <id>https://zhoujingpiao.github.io/post/android-kai-fa-zhi-dui-xian-cheng-chi-de-li-jie</id>
-        <link href="https://zhoujingpiao.github.io/post/android-kai-fa-zhi-dui-xian-cheng-chi-de-li-jie">
-        </link>
-        <updated>2019-07-06T10:09:13.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Android开发之对线程池的理解 | 暮雨今汐</title>
+<meta name="description" content="说什么王权富贵 / 怕什么戒律清规">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhoujingpiao.github.io/favicon.ico?v=1562408058917">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://zhoujingpiao.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhoujingpiao.github.io">
+        <img src="https://zhoujingpiao.github.io/images/avatar.png?v=1562408058917" class="site-logo">
+        <h1 class="site-title">暮雨今汐</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhoujingpiao" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://weibo.com/2407408715" target="_blank">
+            <i class="fab fa-weibo"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      说什么王权富贵 / 怕什么戒律清规
+    </div>
+    <div class="site-footer">
+      Powered by Gridea | <a class="rss" href="https://zhoujingpiao.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Android开发之对线程池的理解</h2>
+            <div class="post-date">2019-07-06</div>
+            
+            <div class="post-content">
+              <ul>
 <li>今天撸代码时遇到这个点，于是回头看了一遍，重新梳理了一下Android线程池的使用，为了加深理解，顺便做了一个小Demo，谈技术要联系实际需求，而且不提源码的都是耍流氓，下面从Why、What、How三个大方面谈谈我对android线程池的部分理解，水平有限，错误之处还请指出。</li>
 </ul>
 <h2 id="why-为什么要用android线程池">Why | 为什么要用Android线程池</h2>
@@ -210,88 +298,76 @@ http://blog.csdn.net/u012702547/article/details/52259529</p>
 <ul>
 <li>以上便是我对线程池的理解，经验有限，不足地方还请指教。另外具体到Android中的使用，还需要去了解AsyncTask类。</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java开发环境配置]]></title>
-        <id>https://zhoujingpiao.github.io/post/java-kai-fa-huan-jing-pei-zhi</id>
-        <link href="https://zhoujingpiao.github.io/post/java-kai-fa-huan-jing-pei-zhi">
-        </link>
-        <updated>2015-08-12T14:52:54.000Z</updated>
-        <summary type="html"><![CDATA[<ul>
-<li>7月29号下载完整版镜像更新了win10的64位专业版，原本已经空着一个盘准备装双系统，无奈安装过程中忽视了路径选择，直接覆盖了原来的系统。</li>
-</ul>
-]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>7月29号下载完整版镜像更新了win10的64位专业版，原本已经空着一个盘准备装双系统，无奈安装过程中忽视了路径选择，直接覆盖了原来的系统。</li>
-</ul>
-<!-- more -->
-<ul>
-<li>
-<p>像小孩子收到新玩具一样，一开始很惊喜，虽然安装使用过程中没有错误，没能遇到微软的诗句。上手的体验感还是特别好的，但用多了，暂时感觉win10最突出的几个点，目前的完善程度和使用场景都不是很理想，就如微软小娜和多任务桌面这两个功能，第一次用感觉高大上，但是小娜不知道是我设置问题还是目前的优化，对于语音音量和搜索点的结果都还是不习惯于我，而且感觉对于win7的成熟度来说，虽然系统兼容性已经不错，win10目前还是不适合用来做开发，我觉得一个好的开发环境，稳定性和安全性是要大于新鲜感的。作为深度强迫症患者，仅仅是桌面的任务栏没有win7的透明感就让我十分压抑，刚好今天遇到adt出毛病，genymotion也貌似暂时不支持？因此果断重装win7，别问我为什么不滚回去，因为前几天手贱......有强迫症的小孩子，有了新玩具是不会想着让旧玩具占据太大的空间的。</p>
-</li>
-<li>
-<p>趁着安装系统的劲，再次感受一年多以前安装开发环境的过程，只是回不到当初的欣喜感了，抒情至此，上干货（基于win7平台）。</p>
-</li>
-<li>
-<p>因为Android开发也是基于Java语言的，所以这也是安装Android开发环境的前提，先安装Java开发环境:</p>
-</li>
-</ul>
-<h3 id="1-下载jdk-java-development-kit">1. 下载JDK （Java Development Kit）</h3>
-<p>下载地址：http://www.oracle.com/index.html    /   Downloads  /  Java For Develop  /  
-自选版本，推荐1.6及其以上，尽量不要下载太旧的，支持的特性太少。</p>
-<h3 id="2安装jdk以及里面自带的jre">2.安装JDK，以及里面自带的jre</h3>
-<p>注意事项：</p>
-<ul>
-<li>
-<p>2.1  两者不能安装在同一个文件夹下；</p>
-</li>
-<li>
-<p>2.2  安装路径不能有中文或者空格，最好只有英文和数字下划线；</p>
-</li>
-<li>
-<p>2.3  安装版本应根据系统的32位或者64位来安装，android下载的sdk版本也是如此；</p>
-</li>
-<li>
-<p>2.4 安装图示略过，注意不要放在系统盘下就好；</p>
-</li>
-</ul>
-<h3 id="3-配置path环境变量">3.  配置path环境变量</h3>
-<p>依次点开电脑 - 属性 - 高级系统设置（高级）  - 环境变量</p>
-<p><img src="https://zhoujingpiao.github.io/post-images/1562407228954.png" alt=""></p>
-<ul>
-<li>3.1 创建一个JAVA_HOME的变量(指代JDK安装路径)：E:\jdk1.7.0_45</li>
-</ul>
-<p><img src="https://zhoujingpiao.github.io/post-images/1562407287922.png" alt=""></p>
-<ul>
-<li>3.2  在path路径前添加：%JAVA_HOME%/bin;</li>
-</ul>
-<p><img src="https://zhoujingpiao.github.io/post-images/1562407302646.png" alt=""></p>
-<p>注意事项：</p>
-<ul>
-<li>
-<p>3.2.1 Path环境意义：要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下面寻找此程序外，还应到path中指定的路径 去找。用户通过设置环境变量，来更好的运行进程；</p>
-</li>
-<li>
-<p>3.2.2 一般习惯上放前面，英文标点不要写错，最好直接复制过去；</p>
-</li>
-<li>
-<p>3.2.3 以后需要更换JDK的目录时，只需要更换JAVA_HOME的目录即可，这是前面配置JAVA_HOME意义，Path环境变量改动会对系统有影响，所以建议提前备份一个txt文档保存环境变量值；</p>
-</li>
-<li>
-<p>3.3  配置CLASSPATH变量：.;%JAVA_HOME%\lib\tools.jar</p>
-</li>
-</ul>
-<p><img src="https://zhoujingpiao.github.io/post-images/1562407332458.png" alt=""></p>
-<p>此处表示用于编译时JAVA类的路径，注意这里设置的是两个值，(.;)表示的是JVM先搜索当前目录。                  其值为：.;%JAVA_HOME%\lib\tools.jar。</p>
-<h3 id="4-验证环境配置是否正确输入内容不区分大小写">4. 验证环境配置是否正确（输入内容不区分大小写）</h3>
-<ul>
-<li>依次点击开始 - 运行 （或者按快捷键windows + R）,输入cmd 打开命令行工具，依次输入java -version、javac，如果有返回内容且不是报错误信息，报错的话请重新对照安装流程对一遍，尤其是安装说明，安装出错一般需要重装，且要先卸载再重启一遍系统再重新安装。如果没报错，返回类似信息，就表示配置成功，结果如下：</li>
-</ul>
-<p><img src="https://zhoujingpiao.github.io/post-images/1562407352812.png" alt="">
-<img src="https://zhoujingpiao.github.io/post-images/1562407357604.png" alt="">
-                 
-以上，则表示配置完成。</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhoujingpiao.github.io/post/java-kai-fa-huan-jing-pei-zhi">
+                  <h3 class="post-title">
+                    Java开发环境配置
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd5a826af873be485f97c',
+        clientSecret: 'f745c9fa3c0f3529b094fb06fd020ca37a919755',
+        repo: 'zhoujingpiao.github.io',
+        owner: 'zhoujingpiao',
+        admin: ['zhoujingpiao'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
